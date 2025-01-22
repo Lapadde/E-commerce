@@ -20,13 +20,13 @@
 - Pilih file SQL yang disediakan (`ecommerce_db.sql`) dan klik **Go**.
 
 ### 3. **Konfigurasi Koneksi Database**
-- Buka file konfigurasi database pada aplikasi (misalnya, `config.php`).
+- Buka file konfigurasi database pada aplikasi `/includes/db.php`).
 - Pastikan detail koneksi database Anda sesuai:
   ```php
-  $host = 'localhost';
-  $username = 'root'; // Sesuaikan jika berbeda
-  $password = '';     // Kosongkan jika default, sesuaikan jika berbeda
-  $dbname = 'ecommerce_db';
+  $host = 'localhost';  
+  $db = 'ecommerce_db'; 
+  $user = 'root';       
+  $pass = '';
   ```
 
 ---
@@ -45,7 +45,7 @@ Aplikasi ini memiliki 3 role pengguna dengan kredensial berikut:
 ## 🌐 Cara Mengakses Aplikasi
 1. Buka browser Anda dan akses aplikasi melalui URL berikut:
    ```
-   http://localhost/nama-folder-aplikasi
+   http://localhost/nama-folder-aplikasi/login.php
    ```
    *(Ganti `nama-folder-aplikasi` dengan nama folder tempat aplikasi disimpan)*
 2. Masukkan username dan password sesuai dengan role yang Anda miliki untuk login ke dalam sistem.
